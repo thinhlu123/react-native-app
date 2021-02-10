@@ -4,6 +4,7 @@ import React from "react";
 import { style } from './style';
 import { connect } from "react-redux";
 import { toggleTheme } from "../../redux/reducers/themeReducers/action";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 function AuthorizedScreen({navigation, toggleTheme}) {
     return (
@@ -37,9 +38,10 @@ function AuthorizedScreen({navigation, toggleTheme}) {
             <TouchableOpacity style={style.socialFacebookBtn} onPress={() => toggleTheme(true)}>
                 <Text style={style.loginText}>Continue with Facebook</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={style.socialGoogleBtn} onPress={() => toggleTheme(false)}>
+            <TouchableOpacity style={[style.socialGoogleBtn, style.shadow]} onPress={() => toggleTheme(false)}>
                 <Text style={style.loginText}>Continue with Google</Text>
             </TouchableOpacity>
+          <Icon name="rocket" size={30} color="#900" />
         </View>
     );
 }
