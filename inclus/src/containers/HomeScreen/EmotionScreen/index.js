@@ -3,29 +3,22 @@ import { Text, View, TextInput, TouchableOpacity } from "react-native";
 import { style } from "./style";
 import {
   responsiveHeight,
-  responsiveWidth,
-  responsiveScreenHeight,
-  responsiveScreenWidth,
-  responsiveFontSize, responsiveScreenFontSize,
 } from "react-native-responsive-dimensions";
 
 function EmotionScreen({ navigation, route }) {
   const { emotion } = route.params;
-  const onDone = () => {
-    navigation.goBack()
-  }
   return (
     <View style={style.container}>
       <View style={[style.headerContainer, { marginBottom: 20 }]}>
         <View style={{backgroundColor: 'yellow', alignItems: 'flex-end', marginTop: 40}}>
-          <TouchableOpacity onPress={onDone}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Text>
               Done
             </Text>
           </TouchableOpacity>
         </View>
         <View style={{ backgroundColor: "mediumaquamarine", marginTop: 40 }}>
-          <Text style={[style.titleHeader]}>qweqwe</Text>
+          <Text style={[style.titleHeader]}>{emotion}</Text>
         </View>
       </View>
       <View style={{ marginBottom: 30 }}>
@@ -51,7 +44,6 @@ function EmotionScreen({ navigation, route }) {
         </TextInput>
       </View>
     </View>
-
   );
 }
 

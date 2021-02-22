@@ -114,27 +114,27 @@ function TestView({navigation}) {
           <Chip style={style.chipEmotion} //icon={() => <FontAwesomeIcon name="user" />}
                 avatar={<Avatar.Image style={style.chipAvatar} size={responsiveScreenFontSize(4)} source={require("../../assets/images/Baby.tux-800x800.png")} />}
                 textStyle={{ fontSize: responsiveScreenFontSize(2.5) }}
-                onPress={() => console.log("Pressed")}>Grateful</Chip>
+                onPress={() => onPressEmotionChip('grateful')}>Grateful</Chip>
           <Chip style={[style.chipEmotion]} //icon={() => <FontAwesomeIcon name="user" />}
                 avatar={<Avatar.Image style={style.chipAvatar} size={responsiveScreenFontSize(4)} source={require("../../assets/images/Baby.tux-800x800.png")} />}
                 textStyle={{ fontSize: responsiveScreenFontSize(2.5) }}
-                onPress={() => console.log("Pressed")}>Happy</Chip>
+                onPress={() => onPressEmotionChip('happy')}>Happy</Chip>
           <Chip style={style.chipEmotion} //icon={() => <FontAwesomeIcon name="user" />}
                 avatar={<Avatar.Image style={style.chipAvatar} size={responsiveScreenFontSize(4)} source={require("../../assets/images/Baby.tux-800x800.png")} />}
                 textStyle={{ fontSize: responsiveScreenFontSize(2.5) }}
-                onPress={() => console.log("Pressed")}>Angry</Chip>
+                onPress={() => onPressEmotionChip('angry')}>Angry</Chip>
           <Chip style={style.chipEmotion} //icon={() => <FontAwesomeIcon name="user" />}
                 avatar={<Avatar.Image style={style.chipAvatar} size={responsiveScreenFontSize(4)} source={require("../../assets/images/Baby.tux-800x800.png")} />}
                 textStyle={{ fontSize: responsiveScreenFontSize(2.5) }}
-                onPress={() => console.log("Pressed")}>Tired</Chip>
+                onPress={() => onPressEmotionChip('tired')}>Tired</Chip>
           <Chip style={style.chipEmotion} //icon={() => <FontAwesomeIcon name="user" />}
                 avatar={<Avatar.Image style={style.chipAvatar} size={responsiveScreenFontSize(4)} source={require("../../assets/images/Baby.tux-800x800.png")} />}
                 textStyle={{ fontSize: responsiveScreenFontSize(2.5) }}
-                onPress={() => console.log("Pressed")}>Sleepy</Chip>
+                onPress={() => onPressEmotionChip('sleepy')}>Sleepy</Chip>
           <Chip style={[style.chipEmotion, {alignItems: 'center'}]}
                 avatar={<Avatar.Image style={style.chipAvatar} size={responsiveScreenFontSize(4)} source={require("../../assets/images/Baby.tux-800x800.png")} />}
                 textStyle={{ fontSize: responsiveScreenFontSize(2.5) }}
-                onPress={() => console.log("Pressed")}>Disappointed</Chip>
+                onPress={() => onPressEmotionChip('disappointed')}>Disappointed</Chip>
         </View>
       </View>
       <View style={[style.employmentContainer, {marginTop: 10, marginBottom: 15, }]}>
